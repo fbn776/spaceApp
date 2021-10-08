@@ -1,8 +1,9 @@
 //Other objects:
 let otherBgObjectsList = [
-	{img:Img("img/bgObject01.png"),size:[10,30]},
-	{img:Img("img/bgObject02.png"),size:[10,30]},
-	{img:Img("img/bgObject03.png"),size:[20,50]}
+	{img:Img("img/bgObject/bgObject01.png"),size:[5,25]},
+	{img:Img("img/bgObject/bgObject02.png"),size:[5,25]},
+	{img:Img("img/bgObject/bgObject03.png"),size:[20,50]},
+	{img:Img("img/bgObject/bgObject04.png"),size:[20,50]},
 ];
 
 
