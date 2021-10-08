@@ -3,6 +3,7 @@
 }
 
 body {
+	background-color:black;
 	margin:0;
 }
 #staryBackgroundCanvas {
@@ -25,6 +26,10 @@ body {
 	right: 0;
 }
 
+/*Intro-page styles*/
+.intro-page {
+	z-index: 9999;
+}
 .intro-page .intro-slide {
 	position: absolute;
 	top:0;
@@ -62,4 +67,77 @@ body {
 }
 .intro-page .intro-logo {
 	font-size: 25px;
+	font-family: oswald;
+}
+
+/*Home page styles*/
+.home-page {
+	transform: translateY(-100%);
+	overflow: scroll;
+	/*transition: transform 0.3s;*/
+	/*background: red;*/
+}
+.home-page .home-title {
+	width: 100%;
+	color:white;
+	text-align: center;
+	font-size: 35px;
+	font-family: oswald;
+	margin-top: 80px;
+	letter-spacing: 2px;
+	margin-bottom:80px;
+}
+.home-page .cards-cont {
+	width: 100%;
+	overflow: scroll;
+}
+.home-page .home-page-card {
+	background-color: rgba(24,24,24,0.8);
+	width:90%;
+	margin:10px auto;
+	border-radius: 8px;
+	box-shadow: var(--shadow);
+	height: 120px;
+	overflow: hidden;
+	border:3px solid rgba(200,200,200,0.1);
+	position: relative;
+	margin-bottom:25px;
+}
+.home-page-card .thumbnail {
+	position: absolute;
+	top:0;
+	left: 0;
+	width:120px;
+	height:120px;
+	border-right: 3px solid #282828;
+	background: black;
+}
+.home-page-card .thumbnail img {
+	height: 80%;
+}
+
+.home-page-card .details {
+	position: absolute;
+	top:0;
+	left: 120px;
+	width: calc(100% - 120px);
+	height: 100%;
+	color:white;
+	padding: 10px;
+}
+
+.home-page-card .details label {
+	width: 100%;
+	display: block;
+	font-family: oswald;
+	font-size: 18px;
+}
+.home-page-card .details p {
+	width: 100%;
+	display: block;
+	margin:0px;
+	padding: 8px 0px;
+	overflow: scroll;
+	font-family: roboto;
+	font-weight: 100;
 }

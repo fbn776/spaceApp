@@ -20,7 +20,7 @@ function setBgCanvas(id) {
 	let xOffset = 100,
 		yOffset = 100;
 
-
+	const colors = [[179,197,231],[50,70,113],[249,244,212],[255,255,255]];
 
 	for (let y = -yOffset; y < canvas.height + yOffset; y += dp) {
 		for (let x = -xOffset; x < canvas.width + xOffset; x += dp) {
@@ -32,7 +32,8 @@ function setBgCanvas(id) {
 
 				if (Math.random() > 0.08) {
 					ctx.beginPath();
-					ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+					let color = colors.randomItem();
+					ctx.fillStyle = `rgba(${color[0]},${color[1]},${color[2]},${alpha})`;
 					ctx.arc(starX, starY, size, 0, 2 * Math.PI);
 					ctx.fill();
 					ctx.closePath();

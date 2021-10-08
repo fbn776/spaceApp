@@ -6,7 +6,7 @@ document.body.onload = function (){
 	//Init the bg canvas:
 	setBgCanvas("staryBackgroundCanvas");
 	
-	setTimeout(function(){
+	//setTimeout(function(){
 		doIntro();
-	},500);
+	//},500);
 }

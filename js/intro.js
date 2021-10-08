@@ -17,10 +17,11 @@ function doIntroLogo(){
 function doIntro(){
 	doIntroSlide();
 	doIntroLogo();
-	
+	Pages.home.style.transition = "transform 0.3s"
+	setTimeout(()=>{
+		Pages.home.style.transform = "translateY(0px)"
+	},400);
 	setTimeout(function(){
-		introElms.main.setStyle({
-			
-		})
+		introElms.main.style.display = "none";
 	},500);
 }

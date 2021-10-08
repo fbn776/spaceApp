@@ -26,3 +26,15 @@ body {
 		background: red;
 	}
 }
+
+
+/*Fonts ref*/
+
+@font-face {
+	font-family:oswald;
+	src:url(../fonts/Oswald.ttf);
+}
+@font-face {
+	font-family:roboto;
+	src:url(../fonts/Roboto.ttf);
+}

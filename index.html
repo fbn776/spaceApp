@@ -12,12 +12,11 @@
 	<link rel="stylesheet" href="libs/lib.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/style.css">
-
 	<title>Pocket Space</title>
 </head>
+
 <body>
 	<canvas id="staryBackgroundCanvas"></canvas>
-	
 	<!-- Main frame of the app-->
 	<div class="main-body fixed-full-size">
 		<!-- Intro window element-->
@@ -30,8 +29,53 @@
 				<label>Pocket Space</label>
 			</div>
 		</div>
+		<!-- Home page window element-->
+		<div class="home-page fixed-full-size">
+			<div class="home-title">Pocket Space</div>
+			<div class="cards-cont">
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/solorSystem.png">
+					</div>
+					<div class="details">
+						<label>Solar System</label>
+						<p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="right">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/star.jpg">
+					</div>
+					<div class="details">
+						<label>Stars</label>
+						<p>
+							A star is an astronomical object consisting of a luminous spheroid of plasma held together by its own gravity
+						</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/galaxy.png">
+					</div>
+					<div class="details">
+						<label>Galaxies</label>
+						<p>
+							A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter
+						</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/rocket.png">
+					</div>
+					<div class="details">
+						<label>Rockets</label>
+						<p>A rocket is a spacecraft, aircraft, vehicle or projectile that obtains thrust from a rocket engine.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	
 	<!--JS libs ref-->
 	<script src="libs/canvas.js"></script>
 	<script src="libs/lib.js"></script>
@@ -40,7 +84,8 @@
 	<script src="js/bg-canvas.js"></script>
 	<script src="js/intro.js"></script>
 	<script src="js/index.js"></script>
-<script>
-</script>
+	<script>
+	</script>
 </body>
+
 </html>
