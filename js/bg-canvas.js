@@ -15,7 +15,7 @@ function setBgCanvas(id) {
 	canvas.height = screenHeight;
 
 	let dp = 20,
-		threshVal = 0.05;
+		threshVal = 0.08;
 
 	let xOffset = 100,
 		yOffset = 100;
@@ -30,7 +30,7 @@ function setBgCanvas(id) {
 					size = random(0.2, 3),
 					alpha = random(0.5, 1);
 
-				if (Math.random() > 0.1) {
+				if (Math.random() > 0.08) {
 					ctx.beginPath();
 					ctx.fillStyle = `rgba(255,255,255,${alpha})`;
 					ctx.arc(starX, starY, size, 0, 2 * Math.PI);

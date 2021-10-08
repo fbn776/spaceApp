@@ -17,8 +17,19 @@
 </head>
 <body>
 	<canvas id="staryBackgroundCanvas"></canvas>
-	<div class="main-body">
-		
+	
+	<!-- Main frame of the app-->
+	<div class="main-body fixed-full-size">
+		<!-- Intro window element-->
+		<div class="intro-page fixed-full-size flex-center">
+			<!--These two elements slide out of the way-->
+			<div class="intro-slide slide-left"></div>
+			<div class="intro-slide slide-right"></div>
+			<div class="intro-logo">
+				<img src="img/logo/logo256.png"><br>
+				<label>Pocket Space</label>
+			</div>
+		</div>
 	</div>
 	
 	<!--JS libs ref-->
@@ -27,9 +38,9 @@
 	<!--Other js files-->
 	<script src="js/constants.js"></script>
 	<script src="js/bg-canvas.js"></script>
+	<script src="js/intro.js"></script>
 	<script src="js/index.js"></script>
 <script>
-setBgCanvas("stary-background-canvas");
 </script>
 </body>
 </html>

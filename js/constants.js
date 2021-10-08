@@ -4,3 +4,5 @@
 const screenWidth = window.innerWidth,
 	screenHeight = window.innerHeight;
 
+
+const startTime = Date.now();
