@@ -14,7 +14,7 @@ function doIntroLogo(){
 	introElms.logo.style.transform = `scale(0)`;
 }
 
-function doIntro(){
+function doIntro(afterIntro){
 	doIntroSlide();
 	doIntroLogo();
 	Pages.home.style.transition = "transform 0.3s"
@@ -23,5 +23,6 @@ function doIntro(){
 	},400);
 	setTimeout(function(){
 		introElms.main.style.display = "none";
-	},500);
+		afterIntro();
+	},800);
 }

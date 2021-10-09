@@ -43,7 +43,7 @@ function removeStoredItem(name) {
 	localStorage.removeItem(name);
 }
 
-function createElm(type, attr) {
+function createElm(type, attr,style = {}) {
 	var elm = document.createElement(type);
 	let keys = attr.getKeys();
 	for (let key of keys) {
@@ -52,6 +52,7 @@ function createElm(type, attr) {
 	if (attr.hasProp("text")) {
 		elm.innerHTML = attr.text;
 	}
+	elm.setStyle(style);
 	return elm;
 };
 // could pass in an array of specific stylesheets for optimization

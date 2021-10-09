@@ -7,7 +7,7 @@ function createHomeCard(parentElm,obj) {
 	*/
 	
 	
-	let card = createElm("div",{class:"home-page-card",dir:"left"});
+	let card = createElm("div",{class:"home-page-card",dir:"left"},{opacity:0,transform:"translateX(100%)"});
 	
 	//Card childrens:
 	let thumbnail = createElm("div",{class:"thumbnail flex-center"});
@@ -19,14 +19,15 @@ function createHomeCard(parentElm,obj) {
 	
 	card.appendChild(thumbnail);
 	card.appendChild(details);
-	
 	return card;
 	//parentElm.appendChild(card);
 }
 
 function initCards(elm,datas){
+	this.arr = [];
 	for(let data of datas){
 		let card = createHomeCard(elm,data);
+		this.arr.push(card);
 		elm.appendChild(card);
-	}
+	};
 }
