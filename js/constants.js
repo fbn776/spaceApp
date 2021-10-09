@@ -14,3 +14,4 @@ const Pages = {
 }
 
 const homePageCardsCont = s("#home-page-cards-cont");
+const solarSystemPageCardsCont = s("#solar-system-cards-cont");
