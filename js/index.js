@@ -11,7 +11,7 @@ document.body.onload = function (){
 	
 	setTimeout(function(){
 		doIntro(finishedIntro);
-	},800);
+	},700);
 	
 	function finishedIntro(){
 		let delay = 0;

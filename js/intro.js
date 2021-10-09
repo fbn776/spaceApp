@@ -24,5 +24,5 @@ function doIntro(afterIntro){
 	setTimeout(function(){
 		introElms.main.style.display = "none";
 		afterIntro();
-	},800);
+	},700);
 }
