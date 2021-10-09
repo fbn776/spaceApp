@@ -1,0 +1,64 @@
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/solarSystem.png">
+					</div>
+					<div class="details">
+						<label>Solar System</label>
+						<p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/star.jpg">
+					</div>
+					<div class="details">
+						<label>Stars</label>
+						<p>
+							A star is an astronomical object consisting of a luminous spheroid of plasma held together by its own gravity
+						</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/galaxy.png">
+					</div>
+					<div class="details">
+						<label>Galaxies</label>
+						<p>
+							A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter
+						</p>
+					</div>
+				</div>
+				
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/astronomicalObjects.png">
+					</div>
+					<div class="details">
+						<label>Astronomical objects</label>
+						<p>
+							An astronomical object or celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe.
+						</p>
+					</div>
+				</div>
+				
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/rocket.png">
+					</div>
+					<div class="details">
+						<label>Rockets</label>
+						<p>A rocket is a spacecraft, aircraft, vehicle or projectile that obtains thrust from a rocket engine.</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/spaceProbe.png">
+					</div>
+					<div class="details">
+						<label>Space Probe</label>
+						<p>
+							A space probe, or simply probe, is a robotic spacecraft that doesn't orbit the Earth, but instead explores farther into outer space.
+						</p>
+					</div>
+				</div>
