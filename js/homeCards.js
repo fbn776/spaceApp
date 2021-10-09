@@ -7,7 +7,7 @@ function createHomeCard(parentElm,obj) {
 	*/
 	
 	
-	let card = createElm("div",{class:"home-page-card",dir:"left"},{opacity:0,transform:"translateY(200%)"});
+	let card = createElm("div",{class:"home-page-card",dir:"left",id:obj.id},{opacity:0,transform:"translateX(100%)"});
 	
 	//Card childrens:
 	let thumbnail = createElm("div",{class:"thumbnail flex-center"});
@@ -36,7 +36,7 @@ function initCards(elm,datas){
 		for (let card of this.arr) {
 			card.style.transitionDelay = delay + "s"
 			card.style.opacity = 1;
-			card.style.transform = "translateY(0px)";
+			card.style.transform = "translateX(0px)";
 			delay += 0.1;
 		}
 	}
