@@ -9,17 +9,14 @@ document.body.onload = function (){
 	//Create the home cards:
 	let homeCardElms = new initCards(homePageCardsCont,homePageCardsData)
 	
-	setTimeout(function(){
+//	setTimeout(function(){
 		doIntro(finishedIntro);
-	},700);
+//	},700);
+	
 	
 	function finishedIntro(){
-		let delay = 0;
-		for(let card of homeCardElms.arr){
-			card.style.transitionDelay = delay+"s"
-			card.style.opacity = 1;
-			card.style.transform = "translateX(0px)";
-			delay += 0.1;
-		}
+		//Intro animation for the cards;
+		homeCardElms.show();
+		
 	}
 }
