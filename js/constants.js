@@ -12,3 +12,5 @@ const Pages = {
 	home:s(".home-page"),
 	intro:s(".intro-page"),
 }
+
+const homePageCardsCont = s("#home-page-cards-cont");

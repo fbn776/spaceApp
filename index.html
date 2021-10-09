@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
 	<meta name="format-detection" content="telephone=no">
 	<meta name="msapplication-tap-highlight" content="no">
 	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
@@ -32,7 +32,7 @@
 		<!-- Home page window element-->
 		<div class="home-page fixed-full-size">
 			<div class="home-title">Pocket Space</div>
-			<div class="cards-cont">
+			<div class="cards-cont" id="home-page-cards-cont">
 				<div class="home-page-card" dir="left">
 					<div class="thumbnail flex-center">
 						<img src="img/thumbnails/solarSystem.png">
@@ -42,7 +42,7 @@
 						<p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.</p>
 					</div>
 				</div>
-				<div class="home-page-card" dir="right">
+				<div class="home-page-card" dir="left">
 					<div class="thumbnail flex-center">
 						<img src="img/thumbnails/star.jpg">
 					</div>
@@ -64,13 +64,37 @@
 						</p>
 					</div>
 				</div>
-				<div class="home-page-card" dir="right">
+				
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/astronomicalObjects.png">
+					</div>
+					<div class="details">
+						<label>Astronomical objects</label>
+						<p>
+							An astronomical object or celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe.
+						</p>
+					</div>
+				</div>
+				
+				<div class="home-page-card" dir="left">
 					<div class="thumbnail flex-center">
 						<img src="img/thumbnails/rocket.png">
 					</div>
 					<div class="details">
 						<label>Rockets</label>
 						<p>A rocket is a spacecraft, aircraft, vehicle or projectile that obtains thrust from a rocket engine.</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/spaceProbe.png">
+					</div>
+					<div class="details">
+						<label>Space Probe</label>
+						<p>
+							A space probe, or simply probe, is a robotic spacecraft that doesn't orbit the Earth, but instead explores farther into outer space.
+						</p>
 					</div>
 				</div>
 			</div>
@@ -81,6 +105,9 @@
 	<script src="libs/lib.js"></script>
 	<!--Other js files-->
 	<script src="js/constants.js"></script>
+	<script src="js/data.js"></script>
+	
+	<script src="js/homeCards.js"></script>
 	<script src="js/bg-canvas.js"></script>
 	<script src="js/intro.js"></script>
 	<script src="js/index.js"></script>

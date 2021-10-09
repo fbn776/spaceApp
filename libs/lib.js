@@ -1,7 +1,6 @@
 function Img(src) {
 	let image = new Image();
 	image.src = src;
-
 	return image;
 };
 
@@ -44,6 +43,17 @@ function removeStoredItem(name) {
 	localStorage.removeItem(name);
 }
 
+function createElm(type, attr) {
+	var elm = document.createElement(type);
+	let keys = attr.getKeys();
+	for (let key of keys) {
+		elm.setAttribute(key, attr[key]);
+	};
+	if (attr.hasProp("text")) {
+		elm.innerHTML = attr.text;
+	}
+	return elm;
+};
 // could pass in an array of specific stylesheets for optimization
 function getAllCSSVariableNames(styleSheets = document.styleSheets) {
 	var cssVars = [];
@@ -313,4 +323,4 @@ Object.prototype.randomItem = function() {
 };
 Object.prototype.hasProp = function(key) {
 	return this ? Object.prototype.hasOwnProperty.call(this, key) : false;
-}
+};
