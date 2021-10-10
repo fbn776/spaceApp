@@ -17,7 +17,7 @@ function doIntroLogo(){
 function doIntro(afterIntro){
 	doIntroSlide();
 	doIntroLogo();
-	Pages.home.style.transition = "transform 0.3s"
+	//Pages.home.style.transition = "transform 0.3s"
 	setTimeout(()=>{
 		Pages.home.style.transform = "translateY(0px)"
 	},400);

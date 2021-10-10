@@ -15,3 +15,11 @@ const Pages = {
 
 const homePageCardsCont = s("#home-page-cards-cont");
 const solarSystemPageCardsCont = s("#solar-system-cards-cont");
+
+
+const windowPagesList = {
+	home:s("#homePageWindow"),
+	solarSystem:s("#solarSystemWindow"),
+}
+
+//sessionStorage.setItem("openedAsNew",true);

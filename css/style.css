@@ -83,11 +83,10 @@ body {
 	transform: translateY(-100%);
 	overflow-y: scroll;
 	overflow-x: hidden;
+	z-index: 100;
 
-
-	opacity: 0;
-	/*transition: transform 0.3s;*/
-	/*background: red;*/
+	/*opacity: 0;*/
+	transition: transform 0.3s , opacity 0.3s;
 }
 
 .home-page .home-title {
@@ -109,6 +108,7 @@ body {
 }
 
 .home-page .home-page-card {
+	display: block;
 	background-color: rgba(24, 24, 24, 0.8);
 	width: 90%;
 	margin: 10px auto;
@@ -187,6 +187,11 @@ body {
 }
 
 /*Gobal window-page style*/
+.window-page {
+	display: none;
+	opacity: 0;
+	transform: translateX(100%)
+}
 .window-page .heading {
 	position: absolute;
 	top: 0;

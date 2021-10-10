@@ -9,10 +9,10 @@ document.body.onload = function() {
 	//Create the home cards:
 	let homeCardElms = new initCards(homePageCardsCont, homePageCardsData)
 	//Create the cards for solar system tab:
-	initSolarSystemCard(solarSystemPageCardsCont,solarSystemCardsData);
-	
-	
-	
+	initSolarSystemCard(solarSystemPageCardsCont, solarSystemCardsData);
+
+
+
 	//	setTimeout(function(){
 	doIntro(finishedIntro);
 	//	},700);
@@ -25,10 +25,4 @@ document.body.onload = function() {
 		homeCardElms.show();
 	};
 	
-
-	window.onpopstate = function(event) {
-		if (event) {
-			alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
-		};
-	};
 }

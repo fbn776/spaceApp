@@ -7,7 +7,7 @@ function createHomeCard(parentElm,obj) {
 	*/
 	
 	
-	let card = createElm("div",{class:"home-page-card",dir:"left",id:obj.id},{opacity:0,transform:"translateX(100%)"});
+	let card = createElm("a",{href:obj.onclickID,class:"home-page-card",dir:"left"},{opacity:0,transform:"translateX(100%)"});
 	
 	//Card childrens:
 	let thumbnail = createElm("div",{class:"thumbnail flex-center"});

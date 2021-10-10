@@ -1,14 +1,12 @@
 /*File for handling all things on the solar system tab*/
-
 /*
-							<div class="item">
-								<div class="thumbnail flex-center">
-									<img src="img/images/solar system/Mercury.jpg">
-								</div>
-								<label class="item-name">Mercury</label>
-								<div class="right-arrow-ic flex-center"><img src="img/icons/arrow-right.png"></div>
-							</div>
-							
+<div class="item">
+	<div class="thumbnail flex-center">
+			<img src="img/images/solar system/Mercury.jpg">
+	</div>
+	<label class="item-name">Mercury</label>
+	<div class="right-arrow-ic flex-center"><img src="img/icons/arrow-right.png"></div>
+</div>
 */
 
 function createSolarSystemCard(parentElm,data){
@@ -34,4 +32,12 @@ function initSolarSystemCard(parentElm,datas){
 	for(let data of datas){
 		createSolarSystemCard(parentElm,data);
 	}
+}
+
+
+document.body.onload = function() {
+	//Init the bg canvas:
+	setBgCanvas("staryBackgroundCanvas");
+	//Create the cards for solar system tab:
+	initSolarSystemCard(solarSystemPageCardsCont, solarSystemCardsData);
 }
