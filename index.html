@@ -17,38 +17,61 @@
 
 <body>
 	<canvas id="staryBackgroundCanvas"></canvas>
-	<!-- Main frame of the app-->
-	<div class="main-body fixed-full-size">
-		<!-- Intro window element-->
-		<div class="intro-page fixed-full-size flex-center">
-			<!--These two elements slide out of the way-->
-			<div class="intro-slide slide-left"></div>
-			<div class="intro-slide slide-right"></div>
-			<div class="intro-logo">
-				<img src="img/logo/logo256.png"><br>
-				<label>Pocket Space</label>
-			</div>
-		</div>
-		<!-- Home page window element-->
-		<div class="home-page fixed-full-size" id="homePageWindow">
-			<div class="home-title">Pocket Space</div>
-			<!--This element contains the home tab cards-->
-			<div class="cards-cont" id="home-page-cards-cont"></div>
+	
+	<!-- Intro window element-->
+	<div class="window-page intro-page flex-center">
+		<!--These two elements slide out of the way-->
+		<div class="intro-slide slide-left"></div>
+		<div class="intro-slide slide-right"></div>
+		<div class="intro-logo">
+			<img src="img/logo/logo256.png"><br>
+			<label>Pocket Space</label>
 		</div>
 	</div>
 	
+	<!-- Home page window element-->
+	<div name="homePage" class="is-body-page window-page home-page" id="homePageWindow">
+		<div class="home-title">Pocket Space</div>
+		<!--This element contains the home tab cards-->
+		<div class="cards-cont" id="home-page-cards-cont"></div>
+	</div>
 	
+	<!--Card window for solar system-->
+	<div name="solarSystem" class="is-body-page window-page category-page closeWindow" id="solarSystemWindow">
+		<div class="heading">
+			<div class="flex-center" onclick="goBackward('#homePageWindow')" ><img src="img/icons/arrow-back.png"></div>
+			<label>Solar System</label>
+		</div>
+		<div class="content">
+			<div class="main-cont">
+				<label class="title">The Solar System</label>
+				<img class="main-photo" src="img/images/solar system/solar_system.jpg">
+				<p class="description">
+					The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the natural satellites—two are larger than the smallest planet, Mercury.The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the remaining mass contained in Jupiter. The four smaller inner system planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer system planets are giant planets, being substantially more massive than the terrestrials.
+				</p>
+				<hr>
+				<div class="secondary-cont">
+					<label class="title">Solar system objects:</label>
+					<!--This elements holds the solar cards element-->
+					<div class="items-cont" id="solar-system-cards-cont"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--JS libs ref-->
 	<script src="libs/canvas.js"></script>
 	<script src="libs/lib.js"></script>
 	<!--Other js files-->
 	<script src="js/constants.js"></script>
+	<script src="js/navigation.js"></script>
 	<script src="js/data.js"></script>
 	<script src="js/homeCards.js"></script>
 	<script src="js/bg-canvas.js"></script>
+	<script src="js/solarSystem.js"></script>
 	<script src="js/intro.js"></script>
 	<script src="js/index.js"></script>
 	<script>
 	</script>
 </body>
+
 </html>

@@ -17,9 +17,14 @@ const homePageCardsCont = s("#home-page-cards-cont");
 const solarSystemPageCardsCont = s("#solar-system-cards-cont");
 
 
-const windowPagesList = {
-	home:s("#homePageWindow"),
-	solarSystem:s("#solarSystemWindow"),
-}
+/*Creates an object with key as the name attribute of all elements with class = is-body-page*/
+const windowPagesList = {};
+let windowPagesArr = document.getElementsByClassName("is-body-page");
+for(let page of windowPagesArr){
+	windowPagesList[page.getAttribute("name")] = page
+};
 
-//sessionStorage.setItem("openedAsNew",true);
+
+const lg = new Log();
+
+let historyState;

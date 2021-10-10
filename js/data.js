@@ -3,7 +3,7 @@ const homePageCardsData = [
 		title: "Solar System",
 		description: "The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.",
 		thumbnail: "img/thumbnails/solarSystem.png",
-		onclickID: "solarSystem.html"
+		onclickID: "solarSystemWindow",
 	},
 	{
 		title: "Stars",

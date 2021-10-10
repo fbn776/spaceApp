@@ -3,7 +3,6 @@ function Img(src) {
 	image.src = src;
 	return image;
 };
-
 function timeDiff(now, then) {
 	var diff = now.getTime() - then.getTime();
 	var msec = diff;
@@ -24,6 +23,17 @@ function timeDiff(now, then) {
 		ms: msec,
 		day: days,
 	};
+};
+function Log(elm = document.body){
+	this.logElm = createElm("div");
+	this.logElm.style = `padding:10px;position:fixed;top:0;right:0;z-index:99999;display:block;background:rgba(200,200,200,0.7)`;
+
+	elm.appendChild(this.logElm);
+
+	
+	this.log = function(txt){
+		this.logElm.innerHTML = txt;
+	}
 }
 //Loacal storage:
 function hasStoredItem(name) {
@@ -44,7 +54,7 @@ function removeStoredItem(name) {
 	localStorage.removeItem(name);
 }
 
-function createElm(type, attr,style = {}) {
+function createElm(type, attr = {},style = {}) {
 	var elm = document.createElement(type);
 	let keys = attr.getKeys();
 	for (let key of keys) {

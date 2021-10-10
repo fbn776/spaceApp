@@ -20,7 +20,7 @@ body {
 	background: black;
 }
 
-.main-body {
+.window-page {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -202,13 +202,13 @@ body {
 	align-items: center;
 }
 
-.window-page .heading a {
+.window-page .heading div {
 	height: 100%;
 	width: var(--top-menu-height);
 	margin: 6px 0px 10px 0px;
 }
 
-.window-page .heading a img {
+.window-page .heading div img {
 	height: 60%;
 }
 

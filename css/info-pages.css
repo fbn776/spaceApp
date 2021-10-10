@@ -12,7 +12,7 @@
 }
 
 .info-pages .main-photo-cont img {
-	width: 80%;
+	height: 80%;
 	display: block;
 	position: absolute;
 	top: 0px;
@@ -28,13 +28,14 @@
 	width: 100%;
 	font-family: oswald;
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
 	text-align: center;
 }
 
 .swiper-photo-cont {
 	height: 260px;
+	width: 90%;
 }
 
 .swiper-photo-cont .swiper-wrapper {
@@ -74,4 +75,31 @@
 .swiper-photo-cont .button-prev {
 	top: calc(50% - 30px);
 	left: 0px;
+}
+
+/*Table styles*/
+.objects-data {
+	width: 100%;
+	margin:10px auto;
+	border: 2px solid #282828;
+	border-radius: 5px;
+	padding: 12px;
+}
+.objects-data th {
+	font-family:oswald;
+	display: block;
+	font-size: 15px;
+	margin:12px 0px;
+}
+.objects-data tr {
+	padding: 20px 0px;
+}
+.objects-data td {
+	padding: 3px 0px
+}
+.info-pages p {
+	line-height: 1.6;
+}
+.info-pages {
+	font-size: 14px;
 }
