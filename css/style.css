@@ -187,11 +187,8 @@ body {
 }
 
 /*Gobal window-page style*/
-.window-page {
-	display: none;
-	opacity: 0;
-	transform: translateX(100%)
-}
+/*.window-page {
+}*/
 .window-page .heading {
 	position: absolute;
 	top: 0;
@@ -286,6 +283,8 @@ body {
 	overflow: hidden;
 	border-radius: 6px;
 	margin:8px auto;
+	display: block;
+	
 }
 .category-page .main-cont .secondary-cont .items-cont .item .thumbnail {
 	position: absolute;
@@ -300,6 +299,7 @@ body {
 .category-page .main-cont .secondary-cont .items-cont .item .thumbnail img {
 	height: 80%;
 }
+
 .category-page .main-cont .secondary-cont .items-cont .item .item-name {
 	position: absolute;
 	left:60px;

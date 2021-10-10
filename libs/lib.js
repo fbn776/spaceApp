@@ -17,7 +17,6 @@ function timeDiff(now, then) {
 
 	var days = Math.floor(hh / 24);
 
-
 	return {
 		hh: hh,
 		mm: mm,
@@ -28,9 +27,11 @@ function timeDiff(now, then) {
 }
 //Loacal storage:
 function hasStoredItem(name) {
-	return localStorage.getItem(name) !== null
+	return localStorage.getItem(name) !== null;
 }
-
+function hasSessionItem(name){
+	return sessionStorage.getItem(name) !== null;
+}
 function getStoredItem(name) {
 	return localStorage.getItem(name);
 }

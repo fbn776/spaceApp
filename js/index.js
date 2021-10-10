@@ -8,9 +8,6 @@ document.body.onload = function() {
 
 	//Create the home cards:
 	let homeCardElms = new initCards(homePageCardsCont, homePageCardsData)
-	//Create the cards for solar system tab:
-	initSolarSystemCard(solarSystemPageCardsCont, solarSystemCardsData);
-
 
 
 	//	setTimeout(function(){

@@ -13,9 +13,10 @@ function createSolarSystemCard(parentElm,data){
 	/*data -> {
 		name:<contains the name of the planet>
 		thumbnail:<url to the image of the planet>
+		src:<url to the info page>
 	}*/
 	
-	let item = createElm("div",{class:"item"});
+	let item = createElm("a",{href:data.src,class:"item"});
 		let thumbnail = createElm("div",{class:"thumbnail flex-center"});
 			thumbnail.appendChild(createElm("img",{src:data.thumbnail}));
 		let label = createElm("label",{class:"item-name",text:data.name});

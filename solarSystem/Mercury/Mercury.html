@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+ <html>
+
+ <head>
+ 	<meta charset="utf-8">
+ 	<!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+ 	<meta name="format-detection" content="telephone=no">
+ 	<meta name="msapplication-tap-highlight" content="no">
+ 	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+ 	<meta name="color-scheme" content="light dark">
+ 	<!--Styles link-->
+ 	<link rel="stylesheet" href="../../libs/lib.css">
+ 	<link rel="stylesheet" href="../../css/index.css">
+ 	<link rel="stylesheet" href="../../css/style.css">
+ 	<link rel="stylesheet" href="../../css/info-pages.css">
+ 	<link rel="stylesheet" href="../../libs/swiper.min.css">
+ 	<title>Pocket Space</title>
+ </head>
+
+ <body>
+ 	<canvas id="staryBackgroundCanvas"></canvas>
+ 	<!-- Main frame of the app-->
+ 	<div class="main-body fixed-full-size">
+ 		<!--Card window for solar system-->
+ 		<div class="window-page category-page fixed-full-size">
+ 			<div class="heading">
+ 				<a href="../../solarSystem.html" class="flex-center"><img src="../../img/icons/arrow-back.png"></a>
+ 				<label>Mercury</label>
+ 			</div>
+ 			<div class="content">
+ 				<div class="main-cont info-pages">
+ 					<label class="title">Mercury</label>
+ 					<p>
+ 						Mercury is the smallest planet in the Solar System and the closest to the Sun. Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets. It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods, and mediator between gods and mortals, corresponding to the Greek god Hermes (Ἑρμῆς).
+ 					</p>
+ 					<!-- Slider main container -->
+ 					<div class="swiper swiper-photo-cont">
+ 						<div class="swiper-wrapper">
+ 							<div class="swiper-slide main-photo-cont"><img src="../../img/images/solar system/Mercury.jpg"><label>Mercury</label></div>
+ 							<div class="swiper-slide main-photo-cont"><img src="img/0.jpg"><label>Mercury colors</label></div>
+ 							<div class="swiper-slide main-photo-cont"><img src="img/1.jpg"><label>Mercury north pole</label></div>
+ 						 	<div class="swiper-slide main-photo-cont"><img src="img/2.jpg"><label>Mercury</label></div>
+ 						</div>
+ 						<!-- If we need pagination -->
+ 						<div class="swiper-pagination"></div>
+ 						<div class="button-prev">&#8249;</div>
+ 						<div class="button-next">&#8250;</div>
+ 					</div>
+ 					<p>
+ 						The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the natural satellites—two are larger than the smallest planet, Mercury.The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the remaining mass contained in Jupiter. The four smaller inner system planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer system planets are giant planets, being substantially more massive than the terrestrials.
+ 					</p>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	<!--JS libs ref-->
+ 	<script src="../../libs/canvas.js"></script>
+ 	<script src="../../libs/lib.js"></script>
+ 	<!--Other js files-->
+ 	<script src="../../js/constants.js"></script>
+ 	<script src="../../js/data.js"></script>
+ 	<script src="../../js/bg-canvas.js"></script>
+ 	<script src="../../libs/swiper.min.js"></script>
+ 	<script>
+ 		const swiper = new Swiper('.swiper-photo-cont', {
+ 			loop: false,
+ 			pagination: {
+ 				el: '.swiper-photo-cont .swiper-pagination',
+ 			},
+ 			navigation: {
+ 				nextEl: '.swiper-photo-cont .button-next',
+ 				prevEl: '.swiper-photo-cont .button-prev',
+ 			},
+ 			scrollbar: {
+ 				el: '.swiper-photo-cont .swiper-scrollbar',
+ 			},
+ 		});
+ 	</script>
+ </body>
+
+ </html>
