@@ -16,7 +16,7 @@ function createSolarSystemCard(parentElm,data){
 		src:<url to the info page>
 	}*/
 	
-	let item = createElm("a",{href:data.src,class:"item"});
+	let item = createElm("a",{href:"#"+data.onclickID,class:"item"});
 		let thumbnail = createElm("div",{class:"thumbnail flex-center"});
 			thumbnail.appendChild(createElm("img",{src:data.thumbnail}));
 		let label = createElm("label",{class:"item-name",text:data.name});
@@ -33,12 +33,4 @@ function initSolarSystemCard(parentElm,datas){
 	for(let data of datas){
 		createSolarSystemCard(parentElm,data);
 	}
-}
-
-
-document.body.onload = function() {
-	//Init the bg canvas:
-	setBgCanvas("staryBackgroundCanvas");
-	//Create the cards for solar system tab:
-	initSolarSystemCard(solarSystemPageCardsCont, solarSystemCardsData);
 }

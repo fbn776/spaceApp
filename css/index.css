@@ -58,15 +58,15 @@ a.link {
 }
 .closeWindow {
 	opacity: 0;
-	transform: translateY(-110%);
+	transform: translateY(-110vh);
 	z-index: -100;
 	/*display: none;
 	/*display:none;*/
+	visibility: hidden;
 }
 .openWindow {
 	opacity: 1;
-/*	display: block;*/
 	transform: translateY(0px);
 	z-index: 101;
-	display: block;
+	visibility: visible;
 }

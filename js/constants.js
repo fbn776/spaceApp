@@ -25,6 +25,6 @@ for(let page of windowPagesArr){
 };
 
 
-const lg = new Log();
+///const lg = new Log();
 
 let historyState;

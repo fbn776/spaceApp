@@ -32,18 +32,32 @@ window.addEventListener('popstate', updateLayout);
 function updateLayout(event) {
 	//event.preventDefault();
 	let hash = location.hash.substr(1) || "homePageWindow";
-	
+
 	console.log(hash);
-	
+
 	let toElm = document.getElementById(hash);
-	
+
 	toElm.classList.add("openWindow");
 	toElm.classList.remove("closeWindow");
 
-	for(let page of windowPagesList.getValues()){
-		if(page != toElm){
+	for (let page of windowPagesList.getValues()) {
+		if (page != toElm) {
 			page.classList.add("closeWindow");
 			page.classList.remove("openWindow")
 		};
 	};
+}
+
+
+for (let elm of document.getElementsByClassName("swiper-photo-cont")) {
+	const swiper = new Swiper(elm,{
+		loop: false,
+		pagination: {
+			el: elm.getElementsByClassName("swiper-pagination")[0],
+		},
+		navigation: {
+			nextEl: elm.getElementsByClassName("button-next")[0],
+			prevEl: elm.getElementsByClassName("button-prev")[0],
+		},
+	});
 }

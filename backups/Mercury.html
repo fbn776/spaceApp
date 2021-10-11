@@ -20,8 +20,9 @@
  <body>
  	<canvas id="staryBackgroundCanvas"></canvas>
  	<!-- Main frame of the app-->
+
+
  	<div class="main-body fixed-full-size">
- 		<!--Card window for solar system-->
  		<div class="window-page category-page fixed-full-size">
  			<div class="heading">
  				<a href="../../solarSystem.html" class="flex-center"><img src="../../img/icons/arrow-back.png"></a>
@@ -36,10 +37,10 @@
  					<!-- Slider main container -->
  					<div class="swiper swiper-photo-cont">
  						<div class="swiper-wrapper">
- 							<div class="swiper-slide main-photo-cont"><img src="../../img/images/solar system/Mercury.jpg"><label>Planet Mercury</label></div>
- 							<div class="swiper-slide main-photo-cont"><img src="img/0.jpg"><label>Mercury - false color</label></div>
- 							<div class="swiper-slide main-photo-cont"><img src="img/1.jpg"><label>Mercury - rocky surface</label></div>
- 							<div class="swiper-slide main-photo-cont"><img src="img/2.jpg"><label>Mercury - core</label></div>
+ 							<div class="swiper-slide swiper-photo-slide"><img src="../../img/images/solar system/Mercury.jpg"><label>Planet Mercury</label></div>
+ 							<div class="swiper-slide swiper-photo-slide"><img src="img/0.jpg"><label>Mercury - false color</label></div>
+ 							<div class="swiper-slide swiper-photo-slide"><img src="img/1.jpg"><label>Mercury - rocky surface</label></div>
+ 							<div class="swiper-slide swiper-photo-slide"><img src="img/2.jpg"><label>Mercury - core</label></div>
  						</div>
  						<!-- If we need pagination -->
  						<div class="swiper-pagination"></div>
@@ -47,7 +48,7 @@
  						<div class="button-next">&#8250;</div>
  					</div>
  					<p>
- 						<table class="objects-data">
+ 						<table class="objects-data-table">
  							<th>Orbital characteristics</th>
  							<tr>
  								<td q="true" help="">Aphelion</td>
@@ -80,6 +81,7 @@
  			</div>
  		</div>
  	</div>
+ 
  	<!--JS libs ref-->
  	<script src="../../libs/canvas.js"></script>
  	<script src="../../libs/lib.js"></script>
@@ -89,17 +91,17 @@
  	<script src="../../js/bg-canvas.js"></script>
  	<script src="../../libs/swiper.min.js"></script>
  	<script>
- 		const swiper = new Swiper('.swiper-photo-cont', {
+ 		const swiper = new Swiper(s('.swiper-photo-cont'), {
  			loop: false,
  			pagination: {
- 				el: '.swiper-photo-cont .swiper-pagination',
+ 				el: s('.swiper-photo-cont .swiper-pagination'),
  			},
  			navigation: {
- 				nextEl: '.swiper-photo-cont .button-next',
- 				prevEl: '.swiper-photo-cont .button-prev',
+ 				nextEl: s('.swiper-photo-cont .button-next'),
+ 				prevEl: s('.swiper-photo-cont .button-prev'),
  			},
  			scrollbar: {
- 				el: '.swiper-photo-cont .swiper-scrollbar',
+ 				el: s('.swiper-photo-cont .swiper-scrollbar'),
  			},
  		});
  	</script>

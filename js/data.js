@@ -42,7 +42,7 @@ const solarSystemCardsData = [
 	{
 		name: "Mercury",
 		thumbnail: "img/images/solar system/Mercury.jpg",
-		src:"solarSystem/Mercury/Mercury.html"
+		onclickID: "planetMercuryWindow"
 	},
 	{
 		name: "Venus",

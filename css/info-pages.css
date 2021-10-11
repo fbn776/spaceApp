@@ -1,4 +1,4 @@
-.info-pages .main-photo-cont {
+.info-page .swiper-photo-slide {
 	width: 200px;
 	height: 220px;
 	margin: 10px auto;
@@ -11,19 +11,19 @@
 	position: relative;
 }
 
-.info-pages .main-photo-cont img {
+.info-page .swiper-photo-slide img {
 	height: 80%;
 	display: block;
 	position: absolute;
 	top: 0px;
 }
 
-.swiper-photo-cont {
+.info-page .swiper-photo-cont {
 	width: 240px;
 	height: 240px;
 }
 
-.info-pages .main-photo-cont label {
+.info-page .swiper-photo-slide label {
 	display: block;
 	width: 100%;
 	font-family: oswald;
@@ -33,28 +33,28 @@
 	text-align: center;
 }
 
-.swiper-photo-cont {
+.info-page .swiper-photo-cont {
 	height: 260px;
 	width: 90%;
 }
 
-.swiper-photo-cont .swiper-wrapper {
+.info-page .swiper-photo-cont .swiper-wrapper {
 	height: 210px;
 }
 
-.swiper-photo-cont .swiper-pagination {
+.info-page .swiper-photo-cont .swiper-pagination {
 	position: relative;
 	top: 30px;
 
 }
 
-.swiper-photo-cont .swiper-pagination-bullet {
+.info-page .swiper-photo-cont .swiper-pagination-bullet {
 	background: white;
 }
-.swiper-photo-cont .swiper-pagination-bullet-active {
+.info-page .swiper-photo-cont .swiper-pagination-bullet-active {
 		background-color: white;
 }
-.swiper-photo-cont .button-next , .swiper-photo-cont .button-prev {
+.info-page .swiper-photo-cont .button-next , .swiper-photo-cont .button-prev {
 	color:white;
 	/*position: relative;*/
 	width:40px;
@@ -68,38 +68,38 @@
 	justify-content: center;
 	color:rgb(200,200,200);
 }
-.swiper-photo-cont .button-next {
+.info-page .swiper-photo-cont .button-next {
 	top:calc(50% - 30px);
 	right:0px;
 }
-.swiper-photo-cont .button-prev {
+.info-page .swiper-photo-cont .button-prev {
 	top: calc(50% - 30px);
 	left: 0px;
 }
 
 /*Table styles*/
-.objects-data {
+.info-page .objects-data-table {
 	width: 100%;
 	margin:10px auto;
 	border: 2px solid #282828;
 	border-radius: 5px;
 	padding: 12px;
 }
-.objects-data th {
+.info-page .objects-data-table th {
 	font-family:oswald;
 	display: block;
 	font-size: 15px;
 	margin:12px 0px;
 }
-.objects-data tr {
+.info-page .objects-data-table tr {
 	padding: 20px 0px;
 }
-.objects-data td {
+.info-page .objects-data-table td {
 	padding: 3px 0px
 }
-.info-pages p {
+.info-page p {
 	line-height: 1.6;
 }
-.info-pages {
+.info-page {
 	font-size: 14px;
 }
