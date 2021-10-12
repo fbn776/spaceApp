@@ -6,14 +6,6 @@ document.body.onload = function() {
 	//Init the bg canvas:
 	setBgCanvas("staryBackgroundCanvas");
 
-	initSolarSystemCard(solarSystemPageCardsCont, solarSystemCardsData);
-
-
-
-	//Create the home cards:
-	let homeCardElms = new initCards(homePageCardsCont, homePageCardsData)
-
-
 	//	setTimeout(function(){
 	doIntro(finishedIntro);
 	//	},700);
@@ -49,7 +41,7 @@ function updateLayout(event) {
 
 for (let elm of document.getElementsByClassName("swiper-photo-cont")) {
 	const swiper = new Swiper(elm,{
-		loop: false,
+		loop: true,
 		pagination: {
 			el: elm.getElementsByClassName("swiper-pagination")[0],
 			dynamicBullets: true,
@@ -61,4 +53,11 @@ for (let elm of document.getElementsByClassName("swiper-photo-cont")) {
 	});
 };
 
-for
+
+//Create the home cards:
+let homeCardElms = new initCards(homePageCardsCont, homePageCardsData)
+	
+
+
+const solarSystemPageCardsCont = s("#solar-system-cards-cont");
+initSolarSystemCard(solarSystemPageCardsCont, solarSystemCardsData);

@@ -37,7 +37,7 @@
 	</div>
 	
 	<!--Card window for solar system-->
-	<!--<div name="solarSystem" class="is-body-page window-page category-page closeWindow" id="solarSystemWindow">
+	<div name="solarSystem" class="is-body-page window-page category-page closeWindow" id="solarSystemWindow">
 		<div class="heading">
 			<div class="flex-center" onclick="goBackward('#homePageWindow')"><img src="img/icons/arrow-back.png"></div>
 			<label>Solar System</label>
@@ -53,15 +53,14 @@
 				<div class="secondary-cont">
 					<label class="title">Solar system objects:</label>
 					<!--This elements holds the solar cards element-->
-					<!--<div class="items-cont" id="solar-system-cards-cont"></div>
+					<div class="items-cont" id="solar-system-cards-cont"></div>
 				</div>
 			</div>
 		</div>
-	</div>-->
+	</div>
 	
 	<div name="stars" class="is-body-page window-page category-page closeWindow" id="starsWindow">
-		<div class="heading">
-			<div class="flex-center" onclick="goBackward('#homePageWindow')"><img src="img/icons/arrow-back.png"></div>
+		<div class="heading"><div class="flex-center" onclick="goBackward('#homePageWindow')"><img src="img/icons/arrow-back.png"></div>
 			<label>Stars</label>
 		</div>
 		<div class="content">
@@ -69,7 +68,7 @@
 				<label class="title">Stars</label>
 				<img class="main-photo" src="img/thumbnails/star.jpg">
 				<p class="description">
-				
+					A star is an astronomical object consisting of a luminous spheroid of plasma held together by its own gravity. The nearest star to Earth is the Sun. Many other stars are visible to the naked eye at night, but due to their immense distance from Earth they appear as fixed points of light in the sky. The most prominent stars are grouped into constellations and asterisms, and many of the brightest stars have proper names. Astronomers have assembled star catalogues that identify the known stars and provide standardized stellar designations.
 				</p>
 				<hr>
 				<div class="secondary-cont">
@@ -81,7 +80,48 @@
 		</div>
 	</div>
 	
-	
+	<div name="galaxies" class="is-body-page window-page category-page closeWindow" id="galaxiesWindow">
+		<div class="heading">
+			<div class="flex-center" onclick="goBackward('#homePageWindow')"><img src="img/icons/arrow-back.png"></div>
+			<label>Galaxies</label>
+		</div>
+		<div class="content">
+			<div class="main-cont">
+				<label class="title">Galaxies</label>
+				<img class="main-photo" src="img/thumbnails/galaxy.png">
+				<p class="description">A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter. The word is derived from the Greek galaxias (γαλαξίας), literally "milky", a reference to the Milky Way. Galaxies range in size from dwarfs with just a few hundred million (108) stars to giants with one hundred trillion (1014) stars, each orbiting its galaxy's center of mass.Galaxies are categorized according to their visual morphology as elliptical, spiral, or irregular. Many are thought to have supermassive black holes at their centers.</p>
+				<hr>
+				<div class="secondary-cont">
+					<label class="title">Some galaxies:</label>
+					<!--This elements holds the solar cards element-->
+					<div class="items-cont" id="galaxy-cards-cont"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div name="astronomicalObjs" class="is-body-page window-page category-page closeWindow" id="astronomicalObjectsWindow">
+		<div class="heading">
+			<div class="flex-center" onclick="goBackward('#homePageWindow')"><img src="img/icons/arrow-back.png"></div>
+			<label>Astronomical objects</label>
+		</div>
+		<div class="content">
+			<div class="main-cont">
+				<label class="title">Astronomical Objects</label>
+				<img class="main-photo" src="img/thumbnails/astronomicalObjects.png">
+				<p class="description">
+					An astronomical object or celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe. In astronomy, the terms object and body are often used interchangeably. However, an astronomical body or celestial body is a single, tightly bound, contiguous entity, while an astronomical or celestial object is a complex, less cohesively bound structure, which may consist of multiple bodies or even other objects with substructures.Examples of astronomical objects include planetary systems, star clusters, nebulae, and galaxies, while asteroids, moons, planets, and stars are astronomical bodies. A comet may be identified as both body and object: It is a body when referring to the frozen nucleus of ice and dust, and an object when describing the entire comet with its diffuse coma and tail.
+				</p>
+				<hr>
+				<div class="secondary-cont">
+					<label class="title">Some astronomical objects:</label>
+					<!--This elements holds the solar cards element-->
+					<div class="items-cont" id="astronomical-objects-cards-cont"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!--Info-page-elms-->
 	<div name="Mercury" class="is-body-page window-page category-page info-page closeWindow" id="planetMercuryWindow">
 	<div class="window-page category-page fixed-full-size">
@@ -292,7 +332,7 @@ Like Jupiter and Saturn, Neptune's atmosphere is composed primarily of hydrogen 
 	<script src="js/navigation.js"></script>
 	<script src="js/data.js"></script>
 	<script src="js/homeCards.js"></script>
-	<script src="js/homeCards.js"></script>
+	
 	<script src="js/bg-canvas.js"></script>
 	<script src="js/solarSystem.js"></script>
 	<script src="js/intro.js"></script>

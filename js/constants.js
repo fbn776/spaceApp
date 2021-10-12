@@ -14,7 +14,6 @@ const Pages = {
 }
 
 const homePageCardsCont = s("#home-page-cards-cont");
-const solarSystemPageCardsCont = s("#solar-system-cards-cont");
 
 
 /*Creates an object with key as the name attribute of all elements with class = is-body-page*/
