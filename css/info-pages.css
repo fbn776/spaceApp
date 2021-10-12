@@ -116,7 +116,10 @@
 	color:#4553F0;
 	display: block;
 }
-
+.info-page .objects-data-table td .scroll {
+	display: inline-block;
+	overflow: scroll;
+}
 * {
 	/*outline: 1px solid red*/
 }
