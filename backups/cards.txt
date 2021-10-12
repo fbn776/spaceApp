@@ -1,0 +1,92 @@
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/solarSystem.png">
+					</div>
+					<div class="details">
+						<label>Solar System</label>
+						<p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/star.jpg">
+					</div>
+					<div class="details">
+						<label>Stars</label>
+						<p>
+							A star is an astronomical object consisting of a luminous spheroid of plasma held together by its own gravity
+						</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/galaxy.png">
+					</div>
+					<div class="details">
+						<label>Galaxies</label>
+						<p>
+							A galaxy is a gravitationally bound system of stars, stellar remnants, interstellar gas, dust, and dark matter
+						</p>
+					</div>
+				</div>
+				
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/astronomicalObjects.png">
+					</div>
+					<div class="details">
+						<label>Astronomical objects</label>
+						<p>
+							An astronomical object or celestial object is a naturally occurring physical entity, association, or structure that exists in the observable universe.
+						</p>
+					</div>
+				</div>
+				
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/rocket.png">
+					</div>
+					<div class="details">
+						<label>Rockets</label>
+						<p>A rocket is a spacecraft, aircraft, vehicle or projectile that obtains thrust from a rocket engine.</p>
+					</div>
+				</div>
+				<div class="home-page-card" dir="left">
+					<div class="thumbnail flex-center">
+						<img src="img/thumbnails/spaceProbe.png">
+					</div>
+					<div class="details">
+						<label>Space Probe</label>
+						<p>
+							A space probe, or simply probe, is a robotic spacecraft that doesn't orbit the Earth, but instead explores farther into outer space.
+						</p>
+					</div>
+				</div>
+		
+		
+//---->
+		<!-- Individual Cards window-->
+		
+		<!--Card window for solar system-->
+		<div class="window-page category-page fixed-full-size" id="solarSystemWindow">
+			<div class="heading">
+				<a href="#" class="flex-center"><img src="img/icons/arrow-back.png"></a>
+				<label>Solar System</label>
+			</div>
+			<div class="content">
+				<div class="main-cont">
+					<label class="title">The Solar System</label>
+					<img class="main-photo" src="img/images/solar system/solar_system.jpg">
+					<p class="description">
+						The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the natural satellites—two are larger than the smallest planet, Mercury.The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the remaining mass contained in Jupiter. The four smaller inner system planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer system planets are giant planets, being substantially more massive than the terrestrials.
+					</p>
+					<hr>
+					<div class="secondary-cont">
+						<label class="title">Solar system objects:</label>
+						<!--This elements holds the solar cards element-->
+						<div class="items-cont" id="solar-system-cards-cont"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
