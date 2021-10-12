@@ -35,8 +35,9 @@
 		<!--This element contains the home tab cards-->
 		<div class="cards-cont" id="home-page-cards-cont"></div>
 	</div>
+	
 	<!--Card window for solar system-->
-	<div name="solarSystem" class="is-body-page window-page category-page closeWindow" id="solarSystemWindow">
+	<!--<div name="solarSystem" class="is-body-page window-page category-page closeWindow" id="solarSystemWindow">
 		<div class="heading">
 			<div class="flex-center" onclick="goBackward('#homePageWindow')"><img src="img/icons/arrow-back.png"></div>
 			<label>Solar System</label>
@@ -52,13 +53,36 @@
 				<div class="secondary-cont">
 					<label class="title">Solar system objects:</label>
 					<!--This elements holds the solar cards element-->
-					<div class="items-cont" id="solar-system-cards-cont"></div>
+					<!--<div class="items-cont" id="solar-system-cards-cont"></div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+	<div name="stars" class="is-body-page window-page category-page closeWindow" id="starsWindow">
+		<div class="heading">
+			<div class="flex-center" onclick="goBackward('#homePageWindow')"><img src="img/icons/arrow-back.png"></div>
+			<label>Stars</label>
+		</div>
+		<div class="content">
+			<div class="main-cont">
+				<label class="title">Stars</label>
+				<img class="main-photo" src="img/thumbnails/star.jpg">
+				<p class="description">
+				
+				</p>
+				<hr>
+				<div class="secondary-cont">
+					<label class="title">Some Stars:</label>
+					<!--This elements holds the solar cards element-->
+					<div class="items-cont" id="stars-cards-cont"></div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!--Info-page-style-->
 	
+	
+	<!--Info-page-elms-->
 	<div name="Mercury" class="is-body-page window-page category-page info-page closeWindow" id="planetMercuryWindow">
 	<div class="window-page category-page fixed-full-size">
 		<div class="heading">
@@ -258,8 +282,7 @@ Like Jupiter and Saturn, Neptune's atmosphere is composed primarily of hydrogen 
 	</div>
 </div>
 
-	
-	
+
 	<!--JS libs ref-->
 	<script src="libs/canvas.js"></script>
 	<script src="libs/lib.js"></script>
@@ -268,6 +291,7 @@ Like Jupiter and Saturn, Neptune's atmosphere is composed primarily of hydrogen 
 	<script src="js/constants.js"></script>
 	<script src="js/navigation.js"></script>
 	<script src="js/data.js"></script>
+	<script src="js/homeCards.js"></script>
 	<script src="js/homeCards.js"></script>
 	<script src="js/bg-canvas.js"></script>
 	<script src="js/solarSystem.js"></script>

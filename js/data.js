@@ -37,6 +37,28 @@ const homePageCardsData = [
 	}
 ];
 
+const secondaryMenuData = [
+	/*
+	
+name,
+pageID,
+title,
+sideImg,
+desc,
+listHeader,
+cardsContId,
+}
+*/
+	{
+		name:"solarSystem",
+		pageID:"solarSystemWindow",
+		title:"Solar System",
+		sideImg:"img/images/solar system/solar_system.jpg",
+		desc:"The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly. Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects, the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the natural satellites—two are larger than the smallest planet, Mercury.The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud. The vast majority of the system's mass is in the Sun, with the majority of the remaining mass contained in Jupiter. The four smaller inner system planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal. The four outer system planets are giant planets, being substantially more massive than the terrestrials.",
+		listHeader:"Solar system objects:",
+		cardsContId:"solar-system-cards-cont",
+	}
+]
 
 const solarSystemCardsData = [
 	{

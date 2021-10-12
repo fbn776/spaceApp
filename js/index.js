@@ -33,8 +33,6 @@ function updateLayout(event) {
 	//event.preventDefault();
 	let hash = location.hash.substr(1) || "homePageWindow";
 
-	console.log(hash);
-
 	let toElm = document.getElementById(hash);
 
 	toElm.classList.add("openWindow");
@@ -54,10 +52,13 @@ for (let elm of document.getElementsByClassName("swiper-photo-cont")) {
 		loop: false,
 		pagination: {
 			el: elm.getElementsByClassName("swiper-pagination")[0],
+			dynamicBullets: true,
 		},
 		navigation: {
 			nextEl: elm.getElementsByClassName("button-next")[0],
 			prevEl: elm.getElementsByClassName("button-prev")[0],
 		},
 	});
-}
+};
+
+for
