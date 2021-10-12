@@ -47,10 +47,13 @@ const solarSystemCardsData = [
 	{
 		name: "Venus",
 		thumbnail: "img/images/solar system/Venus.jpg",
+		onclickID: "planetVenusWindow"
 	},
 	{
 		name: "Earth",
 		thumbnail: "img/images/solar system/Earth.jpg",
+		onclickID: "planetEarthWindow"
+
 	},
 	{
 		name: "Mars",
