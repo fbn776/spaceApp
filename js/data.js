@@ -145,3 +145,14 @@ spaceProbesCardsData.sort(function(a, b) {
 });
 
 
+const astronomicalObjectsCardsData = [
+	{name: "Halley's Comet", thumbnail: "img/images/astronomical objects/Halley's Comet.jpg", onclickID: "Halley'SCometWindow"},
+	{name: 'Comet Encke', thumbnail: 'img/images/astronomical objects/Comet Encke.jpg', onclickID: 'CometEnckeWindow'},
+	{name: '10 Hygiea', thumbnail: 'img/images/astronomical objects/10 Hygiea.jpg', onclickID: '10HygieaWindow'},
+	{name: '2 Pallas', thumbnail: 'img/images/astronomical objects/2 Pallas.jpg', onclickID: '2PallasWindow'},
+	{name: '4 Vesta', thumbnail: 'img/images/astronomical objects/4 Vesta.jpg', onclickID: '4VestaWindow'},
+	{name: 'Horsehead Nebula', thumbnail: 'img/images/astronomical objects/Horsehead Nebula.jpg', onclickID: 'HorseheadNebulaWindow'},
+	{name: 'Crab Nebula', thumbnail: 'img/images/astronomical objects/Crab Nebula.jpg', onclickID: 'CrabNebulaWindow'},
+	{name: 'Sagittarius A*', thumbnail: 'img/images/astronomical objects/Sagittarius A*.jpg', onclickID: 'SagittariusA*Window'},
+	{name: 'Holmberg 15A', thumbnail: 'img/images/astronomical objects/Holmberg 15A.jpg', onclickID: 'Holmberg15AWindow'}
+];
