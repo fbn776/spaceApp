@@ -118,12 +118,30 @@ const galaxiesCardsData =  [
 	{name: 'Messier 83', thumbnail: 'img/images/galaxies/Messier 83.jpg', onclickID: 'Messier83Window'},
 	{name: 'Tadpole Galaxy', thumbnail: 'img/images/galaxies/Tadpole Galaxy.jpg', onclickID: 'TadpoleGalaxyWindow'}
 ];
-
 galaxiesCardsData.sort(function(a, b) {
 	if (a.name < b.name) { return -1; }
 	if (a.name > b.name) { return 1; }
 	return 0;
 });
 
+const spaceProbesCardsData = [
+	{name: 'Voyager 2', thumbnail: 'img/images/space probes/Voyager 2.jpg', onclickID: 'Voyager2Window'},
+	{name: 'Voyager 1', thumbnail: 'img/images/space probes/Voyager 1.jpg', onclickID: 'Voyager1Window'},
+	{name: 'Pioneer 11', thumbnail: 'img/images/space probes/Pioneer 11.jpg', onclickID: 'Pioneer11Window'},
+	{name: 'Pioneer 10', thumbnail: 'img/images/space probes/Pioneer 10.jpg', onclickID: 'Pioneer10Window'},
+	{name: 'Galileo', thumbnail: 'img/images/space probes/Galileo.jpg', onclickID: 'GalileoWindow'},
+	{name: 'Juno', thumbnail: 'img/images/space probes/Juno.jpg', onclickID: 'JunoWindow'},
+	{name: 'Mariner 10', thumbnail: 'img/images/space probes/Mariner 10.jpg', onclickID: 'Mariner10Window'},
+	{name: 'Curiosity rover', thumbnail: 'img/images/space probes/Curiosity rover.jpg', onclickID: 'CuriosityRoverWindow'},
+	{name: 'InSight Lander', thumbnail: 'img/images/space probes/InSight Lander.jpg', onclickID: 'InsightLanderWindow'},
+	{name: 'New Horizons', thumbnail: 'img/images/space probes/New Horizons.jpg', onclickID: 'NewHorizonsWindow'},
+	{name: 'Cassini', thumbnail: 'img/images/space probes/Cassini.jpg', onclickID: 'CassiniWindow'},
+	{name: 'Parker Solar Probe', thumbnail: 'img/images/space probes/Parker Solar Probe.jpg', onclickID: 'ParkerSolarProbeWindow'}
+];
+spaceProbesCardsData.sort(function(a, b) {
+	if (a.name < b.name) { return -1; }
+	if (a.name > b.name) { return 1; }
+	return 0;
+});
 
 

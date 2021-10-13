@@ -68,5 +68,8 @@ initSecondaryCard(starsPageCardsCont,starsCardsData);
 const galaxiesPageCardsCont = s("#galaxy-cards-cont");
 initSecondaryCard(galaxiesPageCardsCont,galaxiesCardsData);
 
+const spaceProbePageCardsCont = s("#space-probes-cards-cont")//space-probes-cards-cont");
+console.log(spaceProbePageCardsCont)
+initSecondaryCard(spaceProbePageCardsCont,spaceProbesCardsData);
 
 
