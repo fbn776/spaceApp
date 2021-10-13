@@ -64,3 +64,9 @@ initSecondaryCard(solarSystemPageCardsCont, solarSystemCardsData);
 
 const starsPageCardsCont = s("#stars-cards-cont");
 initSecondaryCard(starsPageCardsCont,starsCardsData);
+
+const galaxiesPageCardsCont = s("#galaxy-cards-cont");
+initSecondaryCard(galaxiesPageCardsCont,galaxiesCardsData);
+
+
+

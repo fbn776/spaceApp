@@ -97,10 +97,33 @@ const starsCardsData = [
 	{ name: 'VY Canis Majoris', thumbnail: 'img/images/stars/VY Canis Majoris.jpg', onclickID: 'VyCanisMajorisWindow' },
 	{ name: 'Bellatrix', thumbnail: 'img/images/stars/Bellatrix.jpg', onclickID: 'BellatrixWindow' }
 ];
-
 //Sort the stars data in alphabetical order;
 starsCardsData.sort(function(a, b) {
 	if (a.name < b.name) { return -1; }
 	if (a.name > b.name) { return 1; }
 	return 0;
 });
+
+
+const galaxiesCardsData =  [
+	{name: 'Milky Way', thumbnail: 'img/images/galaxies/Milky Way.jpg', onclickID: 'MilkyWayWindow'},
+	{name: 'Andromeda Galaxy', thumbnail: 'img/images/galaxies/Andromeda Galaxy.jpg', onclickID: 'AndromedaGalaxyWindow'},
+	{name: 'Sombrero Galaxy', thumbnail: 'img/images/galaxies/Sombrero Galaxy.jpg', onclickID: 'SombreroGalaxyWindow'},
+	{name: 'Messier 81', thumbnail: 'img/images/galaxies/Messier 81.jpg', onclickID: 'Messier81Window'},
+	{name: 'Large Magellanic Cloud', thumbnail: 'img/images/galaxies/Large Magellanic Cloud.jpg', onclickID: 'LargeMagellanicCloudWindow'},
+	{name: 'Whirlpool Galaxy', thumbnail: 'img/images/galaxies/Whirlpool Galaxy.jpg', onclickID: 'WhirlpoolGalaxyWindow'},
+	{name: 'Triangulum Galaxy', thumbnail: 'img/images/galaxies/Triangulum Galaxy.jpg', onclickID: 'TriangulumGalaxyWindow'},
+	{name: 'Pinwheel Galaxy', thumbnail: 'img/images/galaxies/Pinwheel Galaxy.jpg', onclickID: 'PinwheelGalaxyWindow'},
+	{name: 'Cartwheel Galaxy', thumbnail: 'img/images/galaxies/Cartwheel Galaxy.jpg', onclickID: 'CartwheelGalaxyWindow'},
+	{name: 'Messier 83', thumbnail: 'img/images/galaxies/Messier 83.jpg', onclickID: 'Messier83Window'},
+	{name: 'Tadpole Galaxy', thumbnail: 'img/images/galaxies/Tadpole Galaxy.jpg', onclickID: 'TadpoleGalaxyWindow'}
+];
+
+galaxiesCardsData.sort(function(a, b) {
+	if (a.name < b.name) { return -1; }
+	if (a.name > b.name) { return 1; }
+	return 0;
+});
+
+
+
