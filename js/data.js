@@ -9,7 +9,7 @@ const homePageCardsData = [
 		title: "Stars",
 		description: " A star is an astronomical object consisting of a luminous spheroid of plasma held together by its own gravity ",
 		thumbnail: "img/thumbnails/star.jpg",
-		onclickID:"starsWindow"
+		onclickID: "starsWindow"
 	},
 	{
 		title: "Galaxies",
@@ -83,3 +83,23 @@ const solarSystemCardsData = [
 		onclickID: "planetNeptuneWindow"
 	}
 ];
+
+const starsCardsData = [
+	{ name: 'Sun', thumbnail: 'img/images/stars', onclickID:'SunWindow' },
+	{ name: 'Sirius A', thumbnail: 'img/images/stars', onclickID: 'SiriusAWindow' },
+	{ name: 'Betelgeuse', thumbnail: 'img/images/stars', onclickID: 'BetelgeuseWindow' },
+	{ name: 'Rigel', thumbnail: 'img/images/stars', onclickID: 'RigelWindow' },
+	{ name: 'Arcturus', thumbnail: 'img/images/stars', onclickID: 'ArcturusWindow' },
+	{ name: 'Vega', thumbnail: 'img/images/stars', onclickID: 'VegaWindow' },
+	{ name: 'Canopus', thumbnail: 'img/images/stars', onclickID: 'CanopusWindow' },
+	{ name: 'Proxima Centauri', thumbnail: 'img/images/stars', onclickID: 'ProximaCentauriWindow' },
+	{ name: 'Alpha Centauri A', thumbnail: 'img/images/stars', onclickID: 'AlphaCentauriAWindow' },
+	{ name: 'VY Canis Majoris', thumbnail: 'img/images/stars', onclickID: 'VyCanisMajorisWindow' },
+	{ name: 'Bellatrix', thumbnail: 'img/images/stars', onclickID: 'BellatrixWindow' }
+];
+//Sort the stars data in alphabetical order;
+starsCardsData.sort(function(a, b) {
+	if (a.name < b.name) { return -1; }
+	if (a.name > b.name) { return 1; }
+	return 0;
+});

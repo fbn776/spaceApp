@@ -60,4 +60,7 @@ let homeCardElms = new initCards(homePageCardsCont, homePageCardsData)
 
 
 const solarSystemPageCardsCont = s("#solar-system-cards-cont");
-initSolarSystemCard(solarSystemPageCardsCont, solarSystemCardsData);
+initSecondaryCard(solarSystemPageCardsCont, solarSystemCardsData);
+
+const starsPageCardsCont = s("#stars-cards-cont");
+initSecondaryCard(starsPageCardsCont,starsCardsData);
