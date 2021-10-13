@@ -85,18 +85,19 @@ const solarSystemCardsData = [
 ];
 
 const starsCardsData = [
-	{ name: 'Sun', thumbnail: 'img/images/stars', onclickID:'SunWindow' },
-	{ name: 'Sirius A', thumbnail: 'img/images/stars', onclickID: 'SiriusAWindow' },
-	{ name: 'Betelgeuse', thumbnail: 'img/images/stars', onclickID: 'BetelgeuseWindow' },
-	{ name: 'Rigel', thumbnail: 'img/images/stars', onclickID: 'RigelWindow' },
-	{ name: 'Arcturus', thumbnail: 'img/images/stars', onclickID: 'ArcturusWindow' },
-	{ name: 'Vega', thumbnail: 'img/images/stars', onclickID: 'VegaWindow' },
-	{ name: 'Canopus', thumbnail: 'img/images/stars', onclickID: 'CanopusWindow' },
-	{ name: 'Proxima Centauri', thumbnail: 'img/images/stars', onclickID: 'ProximaCentauriWindow' },
-	{ name: 'Alpha Centauri A', thumbnail: 'img/images/stars', onclickID: 'AlphaCentauriAWindow' },
-	{ name: 'VY Canis Majoris', thumbnail: 'img/images/stars', onclickID: 'VyCanisMajorisWindow' },
-	{ name: 'Bellatrix', thumbnail: 'img/images/stars', onclickID: 'BellatrixWindow' }
+	{ name: 'Sun', thumbnail: 'img/images/stars/Sun.jpg', onclickID:'SunWindow' },
+	{ name: 'Sirius A', thumbnail: 'img/images/stars/Sirius A.jpg', onclickID: 'SiriusAWindow' },
+	{ name: 'Betelgeuse', thumbnail: 'img/images/stars/Betelgeuse.jpg', onclickID: 'BetelgeuseWindow' },
+	{ name: 'Rigel', thumbnail: 'img/images/stars/Rigel.jpg', onclickID: 'RigelWindow' },
+	{ name: 'Arcturus', thumbnail: 'img/images/stars/Arcturus.jpg', onclickID: 'ArcturusWindow' },
+	{ name: 'Vega', thumbnail: 'img/images/stars/Vega.jpg', onclickID: 'VegaWindow' },
+	{ name: 'Canopus', thumbnail: 'img/images/stars/Canopus.jpg', onclickID: 'CanopusWindow' },
+	{ name: 'Proxima Centauri', thumbnail: 'img/images/stars/Proxima Centauri.jpg', onclickID: 'ProximaCentauriWindow' },
+	{ name: 'Alpha Centauri A', thumbnail: 'img/images/stars/Alpha Centauri A.jpg', onclickID: 'AlphaCentauriAWindow' },
+	{ name: 'VY Canis Majoris', thumbnail: 'img/images/stars/VY Canis Majoris.jpg', onclickID: 'VyCanisMajorisWindow' },
+	{ name: 'Bellatrix', thumbnail: 'img/images/stars/Bellatrix.jpg', onclickID: 'BellatrixWindow' }
 ];
+
 //Sort the stars data in alphabetical order;
 starsCardsData.sort(function(a, b) {
 	if (a.name < b.name) { return -1; }
