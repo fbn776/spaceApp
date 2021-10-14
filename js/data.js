@@ -153,6 +153,6 @@ const astronomicalObjectsCardsData = [
 	{name: '4 Vesta', thumbnail: 'img/images/astronomical objects/4 Vesta.jpg', onclickID: '4VestaWindow'},
 	{name: 'Horsehead Nebula', thumbnail: 'img/images/astronomical objects/Horsehead Nebula.jpg', onclickID: 'HorseheadNebulaWindow'},
 	{name: 'Crab Nebula', thumbnail: 'img/images/astronomical objects/Crab Nebula.jpg', onclickID: 'CrabNebulaWindow'},
-	{name: 'Sagittarius A*', thumbnail: 'img/images/astronomical objects/Sagittarius A*.jpg', onclickID: 'SagittariusA*Window'},
+	{name: 'Sagittarius A*', thumbnail: 'img/images/astronomical objects/Sagittarius A_.jpg', onclickID: 'SagittariusA*Window'},
 	{name: 'Holmberg 15A', thumbnail: 'img/images/astronomical objects/Holmberg 15A.jpg', onclickID: 'Holmberg15AWindow'}
 ];
